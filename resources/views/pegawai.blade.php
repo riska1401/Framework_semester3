@@ -169,7 +169,8 @@
                     <div class="card-body">
                         <h3 class="h5 mb-3">Pesan Status</h3>
                         <!-- Menampilkan pesan status dinamis -->
-                        <div class="alert @if($data['working_duration'] < 730) alert-warning status-baru @else alert-success status-senior @endif">
+                        <div class="alert @if($data['working_duration'] < 730) 
+                                    alert-warning status-baru @else alert-success status-senior @endif">
                             {{ $data['status_info'] }}
                         </div>
                     </div>
