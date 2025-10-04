@@ -2,28 +2,12 @@
 
 // Mengimpor facade Route yang digunakan untuk mendefinisikan routing HTTP di Laravel
 use Illuminate\Support\Facades\Route;
-<<<<<<< HEAD
 
 use App\Http\Controllers\HomeController;
-
 use App\Http\Controllers\AuthController;
-
 use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\PegawaiController;
 
-
-=======
-// Mengimpor kelas controller MahasiswaController dari namespace App\Http\Controllers
-use App\Http\Controllers\MahasiswaController;
-// Mengimpor kelas controller HomeController
-use App\Http\Controllers\HomeController;
-// Mengimpor kelas controller PegawaiController
-use App\Http\Controllers\PegawaiController;
-
-
-// Mendefinisikan route HTTP GET untuk URL root '/' yang langsung mengembalikan view 'welcome'
-// Route ini biasanya halaman utama atau landing page aplikasi
->>>>>>> e9dbc3b18dc141ff8d33f7bbacc4fd6dd16e620b
 Route::get('/', function () {
     return view('welcome');
 });
