@@ -1,9 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\MahasiswaController;
+
 use App\Http\Controllers\HomeController;
+
+use App\Http\Controllers\AuthController;
+
+use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\PegawaiController;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -35,4 +40,9 @@ Route::get('/home',[HomeController::class,'index']) ;
 
 Route::get('/pegawai',[PegawaiController ::class,'index']) ;
 
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::post('/signup', [HomeController::class, 'signup'])->name('home.signup');
+
+Route::get('/auth', [AuthController::class, 'index']);
+Route::post('/auth/login', [AuthController::class, 'login']);
 

@@ -25,7 +25,7 @@ class PegawaiController extends Controller
                 'PHP',
                 'SQL'
             ],
-            'join_date' => '2025-08-15',
+            'join_date' => '2003-08-15',
             'salary' => 7500000,
             'career_goal' => 'Become a full-stack engineer'
         ];
